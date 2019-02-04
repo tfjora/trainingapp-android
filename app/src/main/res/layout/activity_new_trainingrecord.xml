@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.activity.NewTrainingRecord">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textview_trainingrecord_runName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/colorTextView"
+                android:text="@string/runName"
+                />
+            <EditText
+                android:id="@+id/edittext_newtraining_runName"
+                style="@style/colorEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textview_trainingrecord_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_trainingrecord_runName"
+                style="@style/colorTextView"
+                android:text="@string/runTime"
+                />
+            <EditText
+                android:id="@+id/edittext_newtraining_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/colorEditText"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textview_newtraining_km"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_trainingrecord_time"
+                style="@style/colorTextView"
+                android:text="@string/runKm"
+                />
+            <EditText
+                android:id="@+id/edittext_newtraining_km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/colorEditText"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textview_newtraining_feeling"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_newtraining_km"
+                style="@style/colorTextView"
+                android:text="@string/runFeel"/>
+            <EditText
+                android:id="@+id/edittext_newtraining_feeling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/colorEditText" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textview_newtraining_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_newtraining_feeling"
+                style="@style/colorTextView"
+                android:text="@string/runDate"
+                />
+            <EditText
+                android:id="@+id/edittext_newtraining_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/colorEditText"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

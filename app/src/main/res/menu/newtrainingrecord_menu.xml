@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="takst.no.takst.AvvikMeny" >
+
+    <item android:id="@+id/icon_newTrainingRecord_save"
+        android:title="Save"
+        android:icon="@drawable/ic_action_new"/>
+
+
+</menu>
